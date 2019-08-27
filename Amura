@@ -1,3 +1,54 @@
+Assignment 1
+
+Class User
+def user.active?
+    result = false
+    if self.status=="active"
+        result= true
+    end
+    result
+end
+
+end
+
+
+Assignment 2
+
+# Refactor the below example codes.
+# Rails code
+
+# Example 1:
+def get_addresses
+  addresses = []
+  users = User.all
+   adr = user.collect{|address|} if user.address.city.present?
+  
+  adr
+end
+
+# Example 2:
+class Greeting
+  attribute_accessor: @name  
+  def name=(value)
+    @name = value
+  end
+  
+  
+end
+
+# Example 3:
+def sum(*a)
+    sum=0
+    *a.each {|number| sum+= number}
+    sum  
+end
+
+
+
+
+
+Assignment 3
+
 total_matches = gets.to_i
 total_matches.times do |a|
   match= []
