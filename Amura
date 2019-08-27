@@ -1,0 +1,17 @@
+total_matches = gets.to_i
+total_matches.times do |a|
+  match= []
+  match = gets
+  result = Hash.new(0)
+  if match[2] == "win"
+    result match[0] += 3
+  elsif match[2] == "loss"
+    result match[1] += 3
+  elsif match[2] == "draw"
+    result match[0] += 1
+    result match [1] +=1
+  end
+  end
+  
+  
+  result.sort_by{|k,v|, v}.reverse
